@@ -121,11 +121,40 @@
                                 <action selector="onLogout:" destination="80n-ro-trL" id="9OJ-Uy-LQ8"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="Fwi-Jn-cEw">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="unG-mx-tEF" kind="presentation" id="3ed-17-J8o"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsb-80-b4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="517.60000000000002" y="-244.22788605697153"/>
+        </scene>
+        <!--Tweet-->
+        <scene sceneID="Lb8-yq-TG6">
+            <objects>
+                <viewController id="EDh-QI-yCp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wij-xG-u1w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5oQ-rY-1rP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tweet" id="Vr4-iS-Wgb">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="qMI-ah-4dA">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="M1N-N9-Z7U">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcR-a3-jyH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2301.5999999999999" y="-254.12293853073464"/>
         </scene>
         <!--Home-->
         <scene sceneID="eGO-TA-9cx">
@@ -146,6 +175,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0sS-C8-lfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-145" y="-244"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RlC-UT-zHB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="unG-mx-tEF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JwG-Oo-gIl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.45824082179999998" green="0.69358594299999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EDh-QI-yCp" kind="relationship" relationship="rootViewController" id="yGe-jE-mAC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KnS-EM-4al" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362.4000000000001" y="-254.12293853073464"/>
         </scene>
     </scenes>
     <resources>
